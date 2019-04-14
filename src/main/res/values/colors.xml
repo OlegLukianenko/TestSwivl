@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4000b4</color>
+    <color name="colorPrimaryDark">#551fc4</color>
+    <color name="colorAccent">#6374D2</color>
+
+    <color name="blue">#4000b4</color>
+    <color name="white">#F3F8FE</color>
+
+    <color name="text_color">#626262</color>
+    <color name="sub_text_color">#D2D2D4</color>
+
+    <color name="internet_not_available">#CC323232</color>
+    <color name="internet_available">#CC056f00</color>
+
+    <color name="gradient_start">#2BA4C2</color>
+    <color name="gradient_end">#135AA1</color>
+
+    <color name="black_transparent_2">#99000000</color>
+    <color name="white_transparent">#80FFFFFF</color>
+</resources>

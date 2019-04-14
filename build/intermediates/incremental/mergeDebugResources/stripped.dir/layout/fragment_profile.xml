@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                  
+                             
+
+    
+
+                 
+                       
+                                                                           
+
+                 
+                            
+                                                                               
+
+                 
+                          
+                                                                     
+
+           
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/fragment_profile_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/layout">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/headerBackground"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:elevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/headerResizer"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.12" />
+
+            <ImageView
+                android:id="@+id/backArrow"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:elevation="3dp"
+                android:tag="binding_1"                              
+                android:src="@drawable/ic_back_ripple"
+                app:layout_constraintBottom_toBottomOf="@+id/textPricing"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textPricing"
+                app:layout_constraintWidth_percent="0.06" />
+
+            <TextView
+                android:id="@+id/textPricing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:tag="binding_2"                                  
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:tag="binding_3"                                    
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headerBackground"
+            app:layout_constraintWidth_percent="0.4" />
+
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="8dp"
+            android:tag="binding_4"                                  
+            android:textColor="@color/text_color"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+        <TextView
+            android:id="@+id/profileLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:tag="binding_5"                                                                 
+                                                                        
+            android:textColor="@drawable/text_btn_selector"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileName" />
+
+
+        <TextView
+            android:id="@+id/textRepos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/repos"
+            android:textColor="@color/text_color"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileLink" />
+
+        <TextView
+            android:id="@+id/repos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:tag="binding_6"                                         
+            android:textColor="@color/text_color"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textRepos"
+            app:layout_constraintStart_toEndOf="@+id/textRepos"
+            app:layout_constraintTop_toTopOf="@+id/textRepos"
+            tools:text="12" />
+
+
+        <TextView
+            android:id="@+id/textFollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/followers"
+            android:textColor="@color/text_color"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textRepos"
+            app:layout_constraintEnd_toStartOf="@+id/followers"
+            app:layout_constraintTop_toTopOf="@+id/textRepos" />
+
+        <TextView
+            android:id="@+id/followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:tag="binding_7"                                       
+            android:textColor="@color/text_color"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textFollowers"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textFollowers"
+            tools:text="442" />
+
+        <TextView
+            android:id="@+id/textGists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/gists"
+            android:textColor="@color/text_color"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textRepos"
+            app:layout_constraintEnd_toStartOf="@+id/textFollowers"
+            app:layout_constraintStart_toEndOf="@+id/repos"
+            app:layout_constraintTop_toTopOf="@+id/textRepos" />
+
+        <TextView
+            android:id="@+id/gists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:tag="binding_8"                                         
+            android:textColor="@color/text_color"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textGists"
+            app:layout_constraintStart_toEndOf="@+id/textGists"
+            app:layout_constraintTop_toTopOf="@+id/textGists"
+            tools:text="442" />
+
+        <include
+            android:id="@+id/includeLayoutProgressBar"
+            layout="@layout/layout_profile_progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:elevation="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+                                        
+            tools:visibility="visible" />
+    </android.support.constraint.ConstraintLayout>
+         
